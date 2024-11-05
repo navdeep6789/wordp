@@ -1,0 +1,79 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:wporg/local-navigation-bar {"backgroundColor":"charcoal-2","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"},":hover":{"color":{"text":"var:preset|color|white"}}}},"position":{"type":"sticky","top":"0px"}},"fontSize":"small"} -->
+	<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"textColor":"light-grey-1","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+	<div class="wp-block-group has-light-grey-1-color has-text-color">
+		<!-- wp:site-title {"level":0,"fontSize":"small","textColor":"white"} /-->
+
+		<!-- wp:query-title {"type":"archive","level":0,"fontSize":"small","fontFamily":"inter","className":"wporg-local-navigation-bar__fade-in-scroll"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:navigation {"openSubmenusOnClick":true,"icon":"menu","overlayBackgroundColor":"charcoal-2","overlayTextColor":"white","layout":{"type":"flex","orientation":"horizontal"},"fontSize":"small","menuSlug":""} /-->
+<!-- /wp:wporg/local-navigation-bar -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|30","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)">
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|80"},"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
+	<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+		<!-- wp:column {"width":"300px"} -->
+		<div class="wp-block-column" style="flex-basis:300px">
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group">
+				<!-- wp:group {"style":{"spacing":{"blockGap":"15px"}},"className":"remove-row-gap","layout":{"type":"flex","flexWrap":"wrap"}} -->
+				<div class="wp-block-group remove-row-gap">
+					<!-- wp:avatar {"size":50,"style":{"border":{"radius":"100px"}}} /-->
+
+					<!-- wp:query-title {"type":"archive","showPrefix":false,"fontSize":"heading-3"} /-->
+				</div>
+				<!-- /wp:group -->
+	
+				<!-- wp:post-author-biography /-->
+	
+				<!-- wp:post-author-name {"isLink":true,"linkTarget":"_blank","className":"display-view-profile-text","fontSize":"normal"} /-->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:query {"queryId":3,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":true}} -->
+			<div class="wp-block-query">
+				<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+					<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"default"}} -->
+						<div class="wp-block-group">
+							<!-- wp:post-title {"isLink":true,"fontSize":"heading-4","fontFamily":"inter","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} /-->
+
+							<!-- wp:pattern {"slug":"wporg-developer-blog/post-meta"} /-->
+						</div>
+						<!-- /wp:group -->
+
+						<!-- wp:post-excerpt /-->
+					</div>
+					<!-- /wp:group -->
+				<!-- /wp:post-template -->
+
+				<!-- wp:query-pagination -->
+					<!-- wp:query-pagination-previous /-->
+
+					<!-- wp:query-pagination-numbers /-->
+
+					<!-- wp:query-pagination-next /-->
+				<!-- /wp:query-pagination -->
+
+				<!-- wp:query-no-results -->
+					<!-- wp:pattern {"slug":"wporg-developer-blog/query-no-results-author"} /-->
+				<!-- /wp:query-no-results -->
+			</div>
+			<!-- /wp:query -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
